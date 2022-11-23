@@ -1,8 +1,8 @@
 NAME = libftprintf.a
 
-HEADERS = libftprintf.h
+HEADERS = ft_printf.h
 
-SOURCES = 
+SOURCES = ft_opt_functions.c ft_printf.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
