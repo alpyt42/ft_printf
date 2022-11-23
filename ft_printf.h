@@ -6,7 +6,7 @@
 /*   By: ale-cont <ale-cont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 18:52:48 by ale-cont          #+#    #+#             */
-/*   Updated: 2022/11/23 13:43:17 by ale-cont         ###   ########.fr       */
+/*   Updated: 2022/11/23 15:59:25 by ale-cont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 # define FT_PRINTF_H
 
 # include <unistd.h>
-# include <stdlib.h>
-# include <limits.h>
-# include <stdio.h>
 # include <stdarg.h>
 
 int	ft_printf(const char *format, ...);
