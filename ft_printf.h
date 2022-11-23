@@ -6,7 +6,7 @@
 /*   By: ale-cont <ale-cont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 18:52:48 by ale-cont          #+#    #+#             */
-/*   Updated: 2022/11/23 12:46:51 by ale-cont         ###   ########.fr       */
+/*   Updated: 2022/11/23 13:43:17 by ale-cont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 # include <stdio.h>
 # include <stdarg.h>
 
-int ft_printf(const char *format, ...);
+int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);
 int	ft_putstr(char *str);
-int	ft_putnbr_int(long long int nbr, char *base);
-int	ft_putnbr_uns(unsigned int, char *base);
+int	ft_putnbr_int(long int nbr, char *base);
+int	ft_putnbr_uns(unsigned long nbr, char *base);
 
 #endif

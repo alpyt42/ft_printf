@@ -6,7 +6,7 @@
 /*   By: ale-cont <ale-cont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 16:37:22 by ale-cont          #+#    #+#             */
-/*   Updated: 2022/11/23 13:04:18 by ale-cont         ###   ########.fr       */
+/*   Updated: 2022/11/23 13:42:24 by ale-cont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_putstr(char *str)
 	return (i);
 }
 
-int	ft_putnbr_int(long long int nbr, char *base)
+int	ft_putnbr_int(long int nbr, char *base)
 {
 	int	lbase;
 	int	i;
@@ -59,7 +59,7 @@ int	ft_putnbr_int(long long int nbr, char *base)
 	return (i);
 }
 
-int	ft_putnbr_uns(unsigned int nbr, char *base)
+int	ft_putnbr_uns(unsigned long nbr, char *base)
 {
 	unsigned int	lbase;
 	unsigned int	i;

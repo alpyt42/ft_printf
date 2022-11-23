@@ -6,7 +6,7 @@
 /*   By: ale-cont <ale-cont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 14:27:48 by ale-cont          #+#    #+#             */
-/*   Updated: 2022/11/23 13:14:05 by ale-cont         ###   ########.fr       */
+/*   Updated: 2022/11/23 13:40:36 by ale-cont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	display_opt(char c, va_list *ap)
 	if (c == 'p')
 	{
 		i += ft_putstr("0x");
-		i += ft_putnbr_uns(va_arg(*ap, unsigned int),"0123456789abcdef");
+		i += ft_putnbr_uns(va_arg(*ap, unsigned long int), "0123456789abcdef");
 	}
 	if (c == 'd' || c == 'i')
 		i = ft_putnbr_int(va_arg(*ap, int), "0123456789");
@@ -39,7 +39,7 @@ int	display_opt(char c, va_list *ap)
 	return (i);
 }
 
-int opt_list(char c)
+int	opt_list(char c)
 {
 	char	*optlist;
 	int		i;
@@ -55,7 +55,7 @@ int opt_list(char c)
 	return (-1);
 }
 
-int ft_printf(const char *format, ...)
+int	ft_printf(const char *format, ...)
 {
 	size_t	i;
 	size_t	lentot;
@@ -64,8 +64,8 @@ int ft_printf(const char *format, ...)
 	i = 0;
 	lentot = 0;
 	va_start(ap, format);
-	if (!format)
-		return (0);
+	if (write(1, 0, 0))
+		return (-1);
 	while (format[i])
 	{
 		if (format[i] != '%' && format[i])
@@ -83,20 +83,3 @@ int ft_printf(const char *format, ...)
 	va_end(ap);
 	return (lentot);
 }
-
-// int	main(void)
-// {
-// 	char	*c;
-// 	char	t;
-// 	int		d;
-// 	int		gg;
-// 	c = "prout";
-// 	t = 'e';
-// 	gg = 123;
-// 	// d = ft_printf("c%sallo%c%X", c, t, gg);
-// 	d = ft_printf(" NULL %s NULL ", NULL);
-// 	printf("%d\n", d);
-// 	gg = printf(" NULL %s NULL ", NULL);
-// 	printf("%d", gg);
-// 	// printf("%d", d);
-// }
