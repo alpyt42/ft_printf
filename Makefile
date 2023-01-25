@@ -1,4 +1,4 @@
-NAME = libftprintf.a
+NAME = printf.a
 
 HEADERS = ft_printf.h
 
@@ -13,7 +13,7 @@ all :    $(NAME)
 $(NAME) : $(OBJECTS)
 	$(AR) rcs $@ $^
 
-%.o : %.c $(HEADERS) Makefile
+%.o : %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean :
